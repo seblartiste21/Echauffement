@@ -1,9 +1,12 @@
-﻿namespace Echauffement;
+﻿using System.Runtime.InteropServices.JavaScript;
+
+namespace Echauffement;
 
 class Program
 {
     static void Main(string[] args)
     {
+        Console.Write("je m'appelle sebastien et j'adore god of war !");
         /*
          * Consigne générale : faites un commit entre chaque étape !
          */
