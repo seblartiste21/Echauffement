@@ -17,6 +17,7 @@ class Program
         Console.WriteLine("bonjour je m'appelle sebastien et j'adore god of war ");
 
         // Etape 2 : demandez à l'utilisateur son prénom et son âge
+
         Console.WriteLine("Comment tu t'appelles ?");
         string playerName = Console.ReadLine();
         Console.WriteLine("Bonjour " + playerName + " !");
@@ -26,6 +27,7 @@ class Program
         if (age >= 18)
 
         // Etape 3 : affichez soit "Tu es majeur", soit "Tu es mineur" dépendant de l'âge fourni par l'utilisateur
+
         {
             Console.WriteLine("Tu es majeur.");
         }
@@ -36,7 +38,11 @@ class Program
 
         // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
 
+        Console.WriteLine("Combien d'euros as-tu ?");
+        double money = double.Parse(Console.ReadLine());
+
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
+
 
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
 
