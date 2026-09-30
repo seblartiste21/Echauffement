@@ -89,9 +89,37 @@ class Program
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
         // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
         // Dans tous les autres cas, informez l'utilisateur que l'action n'a pas été possible
+        if (age >= 18 && money >= prix)
+        {
+            money = money - prix;
 
-        /*
-         * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
-         */
+            Console.WriteLine();
+            Console.WriteLine("Achat effectué !");
+            Console.WriteLine("Tu as acheté : " + arme);
+            Console.WriteLine("Prix : " + prix + " euros");
+            Console.WriteLine("Argent restant : " + money + " euros");
+        }
+        else
+        {
+            Console.WriteLine();
+            Console.WriteLine("L'achat n'est pas possible.");
+
+            if (age < 18)
+            {
+                Console.WriteLine("Tu dois être majeur.");
+            }
+
+            if (money < prix)
+            {
+                Console.WriteLine("Tu n'as pas assez d'argent.");
+            }
+        }
+
+        Console.WriteLine();
+        Console.WriteLine("Appuie sur une touche pour quitter.");
+        Console.ReadKey();
     }
+    /*
+     * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
+     */
 }
