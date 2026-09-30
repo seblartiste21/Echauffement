@@ -5,15 +5,18 @@ namespace Echauffement;
 class Program
 {
     static void Main(string[] args)
+
     {
-        Console.Write("je m'appelle sebastien et j'adore god of war !");
+        Console.Write("je m'appelle sebastien et j'adore god of war ");
         /*
          * Consigne générale : faites un commit entre chaque étape !
          */
-        
+
         // Etape 1 : présentez-vous en écrivant votre prénom et votre jeu préféré
-        
+
         // Etape 2 : demandez à l'utilisateur son prénom et son âge
+        Console.Write("tu a quel age ?");
+       
         
         // Etape 3 : affichez soit "Tu es majeur", soit "Tu es mineur" dépendant de l'âge fourni par l'utilisateur
         
